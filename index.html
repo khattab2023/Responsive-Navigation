@@ -7,22 +7,32 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" href="/styles/index.css" />
-    <link rel="stylesheet" href="/styles/reset.css" />
-    <title>Responsive Web</title>
+    <link rel="stylesheet" href="/styles/normalize.css" />
+    <title>Responsive-navigation</title>
 </head>
 
 <body>
     <main>
         <nav>
-            <div class="logo">
-                <h3>Head.</h3>
+            <div class="nav" id="drop-nav">
+                <a href="#home" class="active">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Information
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">youtube</a>
+                        <a href="#">Linkedin</a>
+                        <a href="#">X</a>
+                    </div>
+                </div>
+                <a href="#about">About</a>
+                <a class="icon" onclick="dropNav()"><i class="fa fa-bars"></i></a>
             </div>
-            <ul>
-                <li><a #href="">Contacts </a></li>
-                <li><a #href="">Services</a></li>
-                <li><a #href="">Works</a></li>
-            </ul>
         </nav>
         <div class="head">
             <div class="text">
@@ -39,10 +49,7 @@
             <img class="img" src="/images/Bitmap.png"
                 alt="Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.">
         </div>
-
     </main>
-
-
 </body>
 
 </html>
