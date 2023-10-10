@@ -18,10 +18,12 @@
 <body>
     <main>
         <nav>
+           
             <div class="nav" id="drop-nav">
                 <a href="#home" class="active">Home</a>
                 <a href="#news">News</a>
                 <a href="#contact">Contact</a>
+
                 <div class="dropdown">
                     <button class="dropbtn">Information
                         <i class="fa fa-caret-down"></i>
@@ -30,11 +32,13 @@
                         <a href="#">youtube</a>
                         <a href="#">Linkedin</a>
                         <a href="#">X</a>
+
                     </div>
                 </div>
                 <a href="#about">About</a>
                 <a class="icon" onclick="dropNav()"><i class="fa fa-bars"></i></a>
             </div>
+
         </nav>
         <div class="head">
             <div class="text">
@@ -52,6 +56,17 @@
                 alt="Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.">
         </div>
     </main>
+    <script>
+  
+  function dropNav() {
+        let drop = document.getElementById("drop-nav");
+        if (drop.className === "nav") {
+          drop.className += " responsive";
+        } else {
+          drop.className = "nav";
+        }
+      }
+    </script>
 </body>
 
 </html>
